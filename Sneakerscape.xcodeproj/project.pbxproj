@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,7 @@
 		9E3B9EAB262FAD2E00758D64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E3B9EA9262FAD2E00758D64 /* LaunchScreen.storyboard */; };
 		9E3B9EB6262FAD2F00758D64 /* SneakerscapeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3B9EB5262FAD2F00758D64 /* SneakerscapeTests.swift */; };
 		9E3B9EC1262FAD2F00758D64 /* SneakerscapeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3B9EC0262FAD2F00758D64 /* SneakerscapeUITests.swift */; };
+		9EF291932630F82400F15686 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF291922630F82400F15686 /* ProfileViewController.swift */; };
 		DE31B7EC8E40799ADF937FE5 /* Pods_SneakerscapeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCA0C1A39AFCDE2BB9D0A73F /* Pods_SneakerscapeTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		9E3B9EBC262FAD2F00758D64 /* SneakerscapeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SneakerscapeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E3B9EC0262FAD2F00758D64 /* SneakerscapeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SneakerscapeUITests.swift; sourceTree = "<group>"; };
 		9E3B9EC2262FAD2F00758D64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EF291922630F82400F15686 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		AC7DE7A213406D9A23E5BDF8 /* Pods-Sneakerscape-SneakerscapeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sneakerscape-SneakerscapeUITests.release.xcconfig"; path = "Target Support Files/Pods-Sneakerscape-SneakerscapeUITests/Pods-Sneakerscape-SneakerscapeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CCA0C1A39AFCDE2BB9D0A73F /* Pods_SneakerscapeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SneakerscapeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB770C1E11A61B86A1A6511 /* Pods_Sneakerscape_SneakerscapeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sneakerscape_SneakerscapeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,7 +113,6 @@
 				8FC3780FBD7723791012DDED /* Pods-SneakerscapeTests.debug.xcconfig */,
 				181FEAB9E3A1DBA2C0D19A89 /* Pods-SneakerscapeTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -147,6 +148,7 @@
 				9E3B9EA7262FAD2E00758D64 /* Assets.xcassets */,
 				9E3B9EA9262FAD2E00758D64 /* LaunchScreen.storyboard */,
 				9E3B9EAC262FAD2E00758D64 /* Info.plist */,
+				9EF291922630F82400F15686 /* ProfileViewController.swift */,
 			);
 			path = Sneakerscape;
 			sourceTree = "<group>";
@@ -409,6 +411,7 @@
 			files = (
 				9E3B9EA3262FAD2A00758D64 /* ViewController.swift in Sources */,
 				9E3B9E9F262FAD2A00758D64 /* AppDelegate.swift in Sources */,
+				9EF291932630F82400F15686 /* ProfileViewController.swift in Sources */,
 				9E3B9EA1262FAD2A00758D64 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
