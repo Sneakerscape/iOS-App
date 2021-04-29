@@ -8,6 +8,8 @@ target 'Sneakerscape' do
   # Pods for Sneakerscape
   pod "AlamofireImage"
 
+  pod 'Parse'
+  
   target 'SneakerscapeTests' do
     inherit! :search_paths
     # Pods for testing
