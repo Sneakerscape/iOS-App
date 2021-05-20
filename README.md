@@ -25,10 +25,10 @@ Evaluation of your app across the following attributes
 
 **Required Must-have Stories**
 
-* Users must be able to see updates on newly released sneakers in real time. 
-* Updates show shoe icon, name, maker, price, etc.
-* Users can click on certain sneaker icons to show stores selling them.
-* Settings (Notifications, Dark Mode, Money Converter, etc.)
+* [X] Users must be able to see updates on newly released sneakers in real time. 
+* [] Updates show shoe icon, name, maker, price, etc.
+* [] Users can click on certain sneaker icons to show stores selling them.
+* [] Settings (Notifications, Dark Mode, Money Converter, etc.)
 
 **Optional Nice-to-have Stories**
 
