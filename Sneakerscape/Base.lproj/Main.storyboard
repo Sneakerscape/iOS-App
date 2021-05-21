@@ -118,7 +118,7 @@
         <!--Home-->
         <scene sceneID="Spd-eg-Gp8">
             <objects>
-                <viewController id="Wd0-Av-4vm" sceneMemberID="viewController">
+                <viewController id="Wd0-Av-4vm" customClass="HomeViewController" customModule="Sneakerscape" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gdd-CV-dfM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -189,6 +189,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="BSU-es-dRz"/>
+                    <connections>
+                        <outlet property="tableView" destination="SbF-Sq-n2P" id="SMb-yh-K7e"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ojm-vQ-lyo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

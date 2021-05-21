@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import AlamofireImage
+import Parse
 
 class ProfileViewController: UIViewController {
     
