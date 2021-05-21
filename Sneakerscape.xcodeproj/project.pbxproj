@@ -18,6 +18,11 @@
 		9E3B9EB6262FAD2F00758D64 /* SneakerscapeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3B9EB5262FAD2F00758D64 /* SneakerscapeTests.swift */; };
 		9E3B9EC1262FAD2F00758D64 /* SneakerscapeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3B9EC0262FAD2F00758D64 /* SneakerscapeUITests.swift */; };
 		9E6C45562657330E00D104B9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6C45552657330E00D104B9 /* HomeViewController.swift */; };
+		9E6C455B2657572300D104B9 /* ShoeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6C455A2657572300D104B9 /* ShoeCell.swift */; };
+		9E6C4574265793B100D104B9 /* CellDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6C4573265793B100D104B9 /* CellDetailViewController.swift */; };
+		9E6C45792657D49500D104B9 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6C45782657D49500D104B9 /* SearchViewController.swift */; };
+		9E6C457E2657F35C00D104B9 /* SearchDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6C457D2657F35C00D104B9 /* SearchDataViewController.swift */; };
+		9E6C4583265818FD00D104B9 /* PrideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6C4582265818FC00D104B9 /* PrideViewController.swift */; };
 		9EF291932630F82400F15686 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF291922630F82400F15686 /* ProfileViewController.swift */; };
 		DE31B7EC8E40799ADF937FE5 /* Pods_SneakerscapeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCA0C1A39AFCDE2BB9D0A73F /* Pods_SneakerscapeTests.framework */; };
 /* End PBXBuildFile section */
@@ -61,6 +66,11 @@
 		9E3B9EC0262FAD2F00758D64 /* SneakerscapeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SneakerscapeUITests.swift; sourceTree = "<group>"; };
 		9E3B9EC2262FAD2F00758D64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E6C45552657330E00D104B9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		9E6C455A2657572300D104B9 /* ShoeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeCell.swift; sourceTree = "<group>"; };
+		9E6C4573265793B100D104B9 /* CellDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CellDetailViewController.swift; path = /Users/sebastian/Desktop/Sneakerscape/Sneakerscape/CellDetailViewController.swift; sourceTree = "<absolute>"; };
+		9E6C45782657D49500D104B9 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		9E6C457D2657F35C00D104B9 /* SearchDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDataViewController.swift; sourceTree = "<group>"; };
+		9E6C4582265818FC00D104B9 /* PrideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrideViewController.swift; sourceTree = "<group>"; };
 		9EF291922630F82400F15686 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		AC7DE7A213406D9A23E5BDF8 /* Pods-Sneakerscape-SneakerscapeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sneakerscape-SneakerscapeUITests.release.xcconfig"; path = "Target Support Files/Pods-Sneakerscape-SneakerscapeUITests/Pods-Sneakerscape-SneakerscapeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CCA0C1A39AFCDE2BB9D0A73F /* Pods_SneakerscapeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SneakerscapeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,6 +131,8 @@
 		9E3B9E92262FAD2A00758D64 = {
 			isa = PBXGroup;
 			children = (
+				9E6C4582265818FC00D104B9 /* PrideViewController.swift */,
+				9E6C45782657D49500D104B9 /* SearchViewController.swift */,
 				9E3B9E9D262FAD2A00758D64 /* Sneakerscape */,
 				9E3B9EB4262FAD2F00758D64 /* SneakerscapeTests */,
 				9E3B9EBF262FAD2F00758D64 /* SneakerscapeUITests */,
@@ -143,15 +155,18 @@
 		9E3B9E9D262FAD2A00758D64 /* Sneakerscape */ = {
 			isa = PBXGroup;
 			children = (
+				9E6C4573265793B100D104B9 /* CellDetailViewController.swift */,
 				9E3B9E9E262FAD2A00758D64 /* AppDelegate.swift */,
 				9E3B9EA0262FAD2A00758D64 /* SceneDelegate.swift */,
 				9E3B9EA2262FAD2A00758D64 /* ViewController.swift */,
 				9E3B9EA4262FAD2A00758D64 /* Main.storyboard */,
+				9E6C457D2657F35C00D104B9 /* SearchDataViewController.swift */,
 				9E3B9EA7262FAD2E00758D64 /* Assets.xcassets */,
 				9E3B9EA9262FAD2E00758D64 /* LaunchScreen.storyboard */,
 				9E3B9EAC262FAD2E00758D64 /* Info.plist */,
 				9EF291922630F82400F15686 /* ProfileViewController.swift */,
 				9E6C45552657330E00D104B9 /* HomeViewController.swift */,
+				9E6C455A2657572300D104B9 /* ShoeCell.swift */,
 			);
 			path = Sneakerscape;
 			sourceTree = "<group>";
@@ -412,10 +427,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E6C455B2657572300D104B9 /* ShoeCell.swift in Sources */,
 				9E6C45562657330E00D104B9 /* HomeViewController.swift in Sources */,
+				9E6C45792657D49500D104B9 /* SearchViewController.swift in Sources */,
 				9E3B9EA3262FAD2A00758D64 /* ViewController.swift in Sources */,
 				9E3B9E9F262FAD2A00758D64 /* AppDelegate.swift in Sources */,
+				9E6C4583265818FD00D104B9 /* PrideViewController.swift in Sources */,
 				9EF291932630F82400F15686 /* ProfileViewController.swift in Sources */,
+				9E6C4574265793B100D104B9 /* CellDetailViewController.swift in Sources */,
+				9E6C457E2657F35C00D104B9 /* SearchDataViewController.swift in Sources */,
 				9E3B9EA1262FAD2A00758D64 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

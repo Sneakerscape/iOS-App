@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/sebastian/Desktop/Sneakerscape/Sneakerscape/CellDetailViewController.swift">
+   </FileRef>
+   <FileRef
       location = "group:Sneakerscape.xcodeproj">
    </FileRef>
    <FileRef

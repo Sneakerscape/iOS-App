@@ -7,10 +7,12 @@
 
 import UIKit
 import Foundation
+import AlamofireImage
 
 class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
         
     var shoes = [[String:Any]]()
+    var shoeImages = [[String:Any]]()
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -25,14 +27,13 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
             "x-rapidapi-key": "4b2bfbee67msh5fe69e4c5e7c37cp1b1f28jsn0edd36618e76",
             "x-rapidapi-host": "the-sneaker-database.p.rapidapi.com"
         ]
-        let request = NSMutableURLRequest(url: NSURL(string: "https://the-sneaker-database.p.rapidapi.com/sneakers?limit=10")! as URL, cachePolicy: .useProtocolCachePolicy,timeoutInterval: 10.0)
+        let url = "https://the-sneaker-database.p.rapidapi.com/sneakers?limit=50&sort=releaseDate:asc"
+        let request = NSMutableURLRequest(url: NSURL(string: url)! as URL, cachePolicy: .useProtocolCachePolicy,timeoutInterval: 10.0)
         request.httpMethod = "GET"
         request.allHTTPHeaderFields = headers
         let session = URLSession.shared
         let dataTask = session.dataTask(with: request as URLRequest) { (data, response, error) in
-             if let error = error {
-                    print(error.localizedDescription)
-             } else if let data = data {
+            if let data = data {
                 let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
                 self.shoes = dataDictionary["results"] as! [[String:Any]]
                 DispatchQueue.main.async {
@@ -48,10 +49,22 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ShoeCell") as! ShoeCell
         let shoe = shoes[indexPath.row]
-        let shoeTitle = shoe["name"] as! String
-        cell.textLabel!.text = shoeTitle
+        let shoeName = shoe["name"] as! String
+        cell.shoeName.text = shoeName
+        let shoeBrand = shoe["brand"] as! String
+        cell.shoeBrand.text = shoeBrand
+        let shoeInfo = shoe["releaseDate"] as! String
+        cell.shoeInfo.text = shoeInfo
         return cell
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView.indexPath(for: cell)!
+        let shoe = shoes[indexPath.row]
+        let detailsViewController = segue.destination as! CellDetailViewController
+        detailsViewController.shoe = shoe
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
