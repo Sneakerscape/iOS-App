@@ -2,8 +2,6 @@
 //  HomeViewController.swift
 //  Sneakerscape
 //
-//  Created by Sebastian on 5/20/21.
-//
 
 import UIKit
 import Foundation
